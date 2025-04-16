@@ -1,60 +1,1944 @@
+
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax - Work in Progress</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'dm-sans': ['"DM Sans"', 'sans-serif'],
-                        'nunito': ['Nunito', 'sans-serif'],
-                    },
-                    colors: {
-                        'beige': '#F5E6D3',
-                        'ink': '#2B3A67',
-                        'accent': '#496A81',
-                    }
-                }
-            }
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Découvrez le programme Métamorphose 90 jours de Parallax. Révélez votre singularité et bâtissez une visibilité durable pour votre TPE/PME. Réservez votre audit gratuit.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+<style>
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+body, div, p {
+  font-family: "Nunito", sans-serif !important;
+}
+</style>
+
+
+      <title>Métamorphose 90 Jours | Structurez votre communication pour attirer vos clients idéaux</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Découvrez le programme Métamorphose 90 jours de Parallax. Révélez votre singularité et bâtissez une visibilité durable pour votre TPE/PME. Réservez votre audit gratuit.">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
         }
-    </script>
-</head>
-<body class="bg-beige h-screen flex items-center justify-center overflow-hidden relative font-nunito">
-    <!-- Animated background circles -->
-    <div class="background-animation"></div>
+      </script>
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Font stylesheet -->
+
+      <style>
+        :root {
+          color-scheme: light;
+        }
+
+        color-scheme: light;
+      </style>
+
+      <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+      // render the settings object
+      //console.log('settings', [object Object]);
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '#E8D9C5',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8', 
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '#A4B8C4',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3', 
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3', 
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['DM Sans', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Nunito', 'Inter', 'system-ui', 'sans-serif'],
+                body: ['Nunito', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta name="google-site-verification" content="">
+      <meta name="baidu-verification" content="">
+      <meta name="yandex-verification" content="">
+      <meta name="bing-verification" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="Parallax - Métamorphose 90 Jours">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
     
-    <div class="text-center relative z-10">
-        <!-- Logo -->
-        <img src="https://github.com/ChezParallax/landing_metamorphose/blob/f615ca24daf77dbdf5257898c6e2528cb518be9e/icon.jpg?raw=true" alt="Parallax Logo" class="w-32 h-32 mx-auto mb-8 rounded-full object-cover">
+      
+      <!-- Font Links -->
+     
+      <link rel="icon" type="image/x-icon" href="">
 
-        <!-- Texte principal -->
-        <h1 class="text-4xl md:text-6xl font-bold text-ink mb-4 font-dm-sans">
-            Parallax
-        </h1>
+      <style>
+        h1, h2, h3, h4, h5, h6 {
+          font-family: DM Sans, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Nunito, Inter, system-ui, sans-serif;
+        }
+      </style>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <div id="RolloutPageContent"><element id="fda440db-3fc9-4033-93bc-cbac8d658e11" data-section-id="fda440db-3fc9-4033-93bc-cbac8d658e11">
+
+
+<div id="root">
+  <header id="header" class="bg-white py-4 fixed w-full z-50 shadow-sm">
+    <nav class="container mx-auto px-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+  <img src="https://i.imgur.com/o7HP7dp.png" alt="Logo" class="h-8">
+</div>
+      
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-6 font-['DM_Sans']">
+        <li><a href="#hero" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">Accueil</a></li>
+        <li><a href="#problem" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">Problématique</a></li>
+        <li><a href="#solution" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">Solution</a></li>
+        <li><a href="#testimonials" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">Témoignages</a></li>
+        <li><a href="#bonus" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">Offre</a></li>
+        <li><a href="#about" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">À propos</a></li>
+        <li><a href="#faq" class="text-gray-800 hover:text-[#A4B8C4] transition-colors">FAQ</a></li>
+        <li><a href="#cta" class="bg-[#C78A5C] text-white px-4 py-2 rounded hover:bg-[#A4B8C4] hover:text-white transition-colors"><b>🔴 Je réserve mon audit gratuit</b></a></li>
+      </ul>
+      
+      <!-- Mobile Navigation Button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none" aria-label="Menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      
+      <!-- Mobile Navigation Menu (Hidden by default) -->
+      <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 md:hidden">
+        <div class="flex justify-end p-4">
+          <button id="mobile-menu-close" class="text-gray-800 focus:outline-none" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <ul class="flex flex-col items-center space-y-6 py-8 font-['DM_Sans']">
+          <li><a href="#hero" class="text-gray-800 text-xl">Accueil</a></li>
+          <li><a href="#problem" class="text-gray-800 text-xl">Problématique</a></li>
+          <li><a href="#solution" class="text-gray-800 text-xl">Solution</a></li>
+          <li><a href="#testimonials" class="text-gray-800 text-xl">Témoignages</a></li>
+          <li><a href="#bonus" class="text-gray-800 text-xl">Offre</a></li>
+          <li><a href="#about" class="text-gray-800 text-xl">À propos</a></li>
+          <li><a href="#faq" class="text-gray-800 text-xl">FAQ</a></li>
+          <li><a href="#cta" class="bg-[#E8D9C5] text-gray-800 px-6 py-2 rounded text-xl mt-4">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <script>
+      // Mobile menu toggle functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         
-        <h2 class="text-xl md:text-2xl text-accent mb-8">
-            Site en construction
-        </h2>
+        // Function to open mobile menu
+        function openMobileMenu() {
+          mobileMenu.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          mobileMenuButton.setAttribute('aria-expanded', 'true');
+        }
+        
+        // Function to close mobile menu
+        function closeMobileMenu() {
+          mobileMenu.classList.add('hidden');
+          document.body.style.overflow = '';
+          mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
+        
+        // Toggle mobile menu
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        
+        // Close mobile menu when clicking on a link
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', closeMobileMenu);
+        });
+        
+        // Close mobile menu when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+            closeMobileMenu();
+          }
+        });
+      });
+    </script>
+  </header>
+</div>
 
-        <p class="text-ink text-lg mb-4">
-            Spécialistes en communication digitale
-        </p>
+</element><element id="0f169925-097b-430e-aad8-9d77d6de1c6d" data-section-id="0f169925-097b-430e-aad8-9d77d6de1c6d">
 
-        <!-- Message avec animation de points -->
-        <p class="text-accent text-lg loading-dots">
-            Nous préparons quelque chose d'extraordinaire
-        </p>
 
-        <!-- Email de contact -->
-        <a href="mailto:hello@chezparallax.fr" class="mt-8 inline-block text-accent hover:text-ink transition-colors">
-            hello@chezparallax.fr
-        </a>
+<div id="root">
+  <section id="hero" class="pt-32 pb-20 md:pt-36 md:pb-24 bg-[#FCFAF7] relative overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between md:space-x-8 lg:space-x-16">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-['DM_Sans'] font-bold text-gray-800 mb-6 leading-tight">
+            Structurez votre communication en 90 jours pour attirer vos clients idéaux.
+          </h1>
+          <p class="text-lg sm:text-xl font-['Nunito'] text-gray-600 mb-8 leading-relaxed">
+            Découvrez comment révéler votre singularité et bâtir une visibilité durable avec Parallax.
+          </p>
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button id="cta-button" class="bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all">
+              Je réserve mon audit gratuit
+            </button>
+            <a href="#solution" class="inline-flex items-center justify-center text-[#6A7D89] hover:text-gray-800 transition-colors duration-300 font-medium py-3 px-6 rounded-md border border-[#6A7D89] hover:border-gray-800 font-['DM_Sans']">
+              Découvrir l'offre
+            </a>
+          </div>
+          <div class="mt-8 flex items-center space-x-2 text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4]" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="font-['Nunito'] text-sm">5 audits gratuits seulement ce mois-ci</span>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+              alt="Professionnel confiant symbolisant la transformation de votre communication"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/e8d9c5/6A7D89?text=Parallax'"
+              class="w-full h-full object-cover"
+              loading="eager"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6">
+              <div class="bg-white/90 backdrop-blur-sm p-4 rounded-lg inline-block">
+                <span class="text-gray-800 font-['DM_Sans'] font-medium">Métamorphose 90 jours</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2 text-right">Photo by fauxels</p>
+        </div>
+      </div>
+      
+      <div class="flex justify-center mt-16">
+        <div class="flex items-center space-x-6 text-sm text-gray-600">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-[#A4B8C4]/20 flex items-center justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <span class="font-['Nunito']">Diagnostic</span>
+          </div>
+          <div class="w-8 h-px bg-gray-300"></div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-[#A4B8C4]/20 flex items-center justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <span class="font-['Nunito']">Déploiement</span>
+          </div>
+          <div class="w-8 h-px bg-gray-300"></div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-[#A4B8C4]/20 flex items-center justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <span class="font-['Nunito']">Optimisation</span>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    
+    <!-- Subtle pattern background -->
+    <div class="absolute -top-24 -right-24 w-64 h-64 bg-[#E8D9C5]/30 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-[#A4B8C4]/20 rounded-full blur-3xl"></div>
+    
+    <!-- Modal for Audit -->
+    <div id="audit-modal" class="fixed inset-0 bg-gray-900/70 flex items-center justify-center z-50 hidden" aria-modal="true" aria-hidden="true">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4 p-6 transform transition-all" role="dialog">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-['DM_Sans'] font-bold text-gray-800">Réservez votre audit gratuit</h3>
+          <button id="close-modal" class="text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Fermer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <form id="audit-form" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1 font-['Nunito']">Nom complet</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#A4B8C4] focus:border-[#A4B8C4] outline-none" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1 font-['Nunito']">Email professionnel</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#A4B8C4] focus:border-[#A4B8C4] outline-none" required>
+          </div>
+          <div>
+            <label for="company" class="block text-sm font-medium text-gray-700 mb-1 font-['Nunito']">Nom de l'entreprise</label>
+            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#A4B8C4] focus:border-[#A4B8C4] outline-none" required>
+          </div>
+            <div>
+            <label for="company" class="block text-sm font-medium text-gray-700 mb-1 font-['Nunito']">Lien réseau social</label>
+            <input type="text" id="reseau" name="reseau" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#A4B8C4] focus:border-[#A4B8C4] outline-none" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1 font-['Nunito']">Votre principal défi en communication</label>
+            <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#A4B8C4] focus:border-[#A4B8C4] outline-none" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[#E8D9C5] hover:bg-[#A4B8C4] text-gray-800 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans']">
+            Réserver mon audit gratuit
+          </button>
+          <p class="text-xs text-gray-500 text-center font-['Nunito']">Seulement 5 places disponibles ce mois-ci. Nous vous contacterons sous 24h.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const ctaButton = document.getElementById('cta-button');
+      const auditModal = document.getElementById('audit-modal');
+      const closeModal = document.getElementById('close-modal');
+      const auditForm = document.getElementById('audit-form');
+      
+      // Function to open modal
+      function openModal() {
+        auditModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        auditModal.setAttribute('aria-hidden', 'false');
+        
+        // Set focus to first form element
+        setTimeout(() => {
+          document.getElementById('name').focus();
+        }, 100);
+      }
+      
+      // Function to close modal
+      function closeModalFunc() {
+        auditModal.classList.add('hidden');
+        document.body.style.overflow = '';
+        auditModal.setAttribute('aria-hidden', 'true');
+        
+        // Return focus to trigger button
+        ctaButton.focus();
+      }
+      
+      // Event listeners
+      ctaButton.addEventListener('click', openModal);
+      closeModal.addEventListener('click', closeModalFunc);
+      
+      // Close modal when clicking outside
+      auditModal.addEventListener('click', function(event) {
+        if (event.target === auditModal) {
+          closeModalFunc();
+        }
+      });
+      
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !auditModal.classList.contains('hidden')) {
+          closeModalFunc();
+        }
+      });
+      
+      // Form submission
+auditForm.addEventListener('submit', async function(event) {
+  event.preventDefault();
+  
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    company: document.getElementById('company').value,
+    message: document.getElementById('message').value,
+    reseau: document.getElementById('reseau').value,
+  };
+  
+  try {
+    await fetch('https://hook.eu2.make.com/qr4qs93fuuoe1ms8lc2knfc1m4uxy3e8', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    
+    alert('Merci ! Votre demande d\'audit a bien été envoyée. Nous vous contacterons sous 24h.');
+    closeModalFunc();
+  } catch (error) {
+    alert('Erreur lors de l\'envoi du formulaire. Merci de réessayer.');
+    console.error(error);
+  }
+});
+
+      
+      // Trap focus in modal
+      auditModal.addEventListener('keydown', function(event) {
+        if (event.key === 'Tab') {
+          const focusableElements = auditModal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+          
+          if (event.shiftKey) {
+            if (document.activeElement === firstElement) {
+              lastElement.focus();
+              event.preventDefault();
+            }
+          } else {
+            if (document.activeElement === lastElement) {
+              firstElement.focus();
+              event.preventDefault();
+            }
+          }
+        }
+      });
+    });
+  </script>
+</div>
+
+</element><element id="be7ba56f-de2b-41ff-bd3f-5e92230fc0dc" data-section-id="be7ba56f-de2b-41ff-bd3f-5e92230fc0dc">
+
+
+<div id="root">
+  <section id="problem" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Problématique</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Votre authenticité mérite mieux qu'une communication confuse.</p>
+      </div>
+      
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2">
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Personne réfléchissant à des problèmes de communication"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/e8d9c5/6A7D89?text=Communication+Challenges'"
+              width="7360"
+              height="4912"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Photo by Energepic.com</p>
+        </div>
+        
+        <div class="lg:w-1/2">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 font-['DM_Sans']">Les défis d'une communication mal structurée</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7A9.97 9.97 0 014.02 8.971m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Manque de visibilité</h4>
+                <p class="text-gray-600 font-['Nunito']">Votre offre reste invisible pour vos clients idéaux malgré vos efforts quotidiens.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Manque de clarté</h4>
+                <p class="text-gray-600 font-['Nunito']">Vos messages sont dilués et votre proposition de valeur reste incomprise.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Manque de régularité</h4>
+                <p class="text-gray-600 font-['Nunito']">Vos actions de communication sont sporadiques et manquent de cohérence stratégique.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div class="ml-4">
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Ressources gaspillées</h4>
+                <p class="text-gray-600 font-['Nunito']">Vous investissez temps et budget sans obtenir le retour sur investissement espéré.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 bg-[#A4B8C4]/10 rounded-lg border border-[#A4B8C4]/20">
+            <p class="text-gray-700 italic font-['Nunito']">"La plupart des TPE/PME perdent jusqu'à 40% de leur potentiel d'acquisition client à cause d'une communication mal structurée."</p>
+          </div>
+          
+          <div class="mt-8">
+            <a href="#solution" class="inline-flex items-center text-[#6A7D89] hover:text-gray-800 font-medium transition-colors font-['DM_Sans']">
+              Découvrir la solution
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="d4742f58-df4d-4f7e-93c7-3f8dfb8d8316" data-section-id="d4742f58-df4d-4f7e-93c7-3f8dfb8d8316">
+
+<div id="root">
+  <section id="solution" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Solution</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Métamorphose 90 jours : Transformez votre communication pour attirer naturellement vos clients idéaux.</p>
+      </div>
+      
+      <div class="flex flex-col lg:flex-row items-stretch gap-12">
+        <div class="lg:w-1/2 order-2 lg:order-1">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 font-['DM_Sans']">Le Programme Qui Réinvente Votre Communication</h3>
+          
+          <div class="space-y-8 mb-8">
+            <div class="p-6 bg-[#E8D9C5]/20 rounded-lg border border-[#E8D9C5]/40 transition-all hover:bg-[#E8D9C5]/30">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-800 font-['DM_Sans']">Phase 1 : Stratégie (Jours 1-15)</h4>
+              </div>
+              <ul class="space-y-2 ml-16">
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Audit complet de votre écosystème de communication
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Identification de votre singularité et de vos points forts
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Définition de vos objectifs stratégiques précis
+                </li>
+              </ul>
+            </div>
+            
+            <div class="p-6 bg-[#A4B8C4]/20 rounded-lg border border-[#A4B8C4]/40 transition-all hover:bg-[#A4B8C4]/30">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-[#A4B8C4] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                  </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-800 font-['DM_Sans']">Phase 2 : Déploiement (Jours 16-60)</h4>
+              </div>
+              <ul class="space-y-2 ml-16">
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Création de votre identité visuelle et verbale cohérente
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Mise en place des canaux de communication adaptés
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Production de contenu clé aligné avec votre stratégie
+                </li>
+              </ul>
+            </div>
+            
+            <div class="p-6 bg-[#6A7D89]/10 rounded-lg border border-[#6A7D89]/30 transition-all hover:bg-[#6A7D89]/20">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-[#6A7D89] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-800 font-['DM_Sans']">Phase 3 : Optimisation (Jours 61-90)</h4>
+              </div>
+              <ul class="space-y-2 ml-16">
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Analyse des premiers résultats et ajustements
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Optimisation de votre stratégie pour maximiser l'impact
+                </li>
+                <li class="flex items-center text-gray-600 font-['Nunito']">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  Formation pour maintenir vos acquis sur le long terme
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="bg-[#E8D9C5]/10 p-6 rounded-lg border border-[#E8D9C5]">
+            <h4 class="text-lg font-semibold text-gray-800 mb-3 font-['DM_Sans']">Vos bénéfices concrets :</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="flex flex-col items-center text-center p-3">
+                <div class="w-16 h-16 rounded-full bg-[#E8D9C5] flex items-center justify-center mb-2">
+                  <span class="text-[#6A7D89] text-lg font-bold">+</span>
+                </div>
+                <p class="font-medium text-gray-800 font-['DM_Sans']">Clarté</p>
+                <p class="text-sm text-gray-600 font-['Nunito']">Un message clair qui résonne avec vos clients idéaux</p>
+              </div>
+              <div class="flex flex-col items-center text-center p-3">
+                <div class="w-16 h-16 rounded-full bg-[#A4B8C4] flex items-center justify-center mb-2">
+                  <span class="text-white text-lg font-bold">+</span>
+                </div>
+                <p class="font-medium text-gray-800 font-['DM_Sans']">Résultats</p>
+                <p class="text-sm text-gray-600 font-['Nunito']">Une visibilité accrue et des conversions qualifiées</p>
+              </div>
+              <div class="flex flex-col items-center text-center p-3">
+                <div class="w-16 h-16 rounded-full bg-[#6A7D89] flex items-center justify-center mb-2">
+                  <span class="text-white text-lg font-bold">+</span>
+                </div>
+                <p class="font-medium text-gray-800 font-['DM_Sans']">Croissance</p>
+                <p class="text-sm text-gray-600 font-['Nunito']">Un développement durable et authentique</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <button id="solution-cta" class="bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all">
+              Je réserve mon audit gratuit
+            </button>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+          <div class="sticky top-32">
+            <div class="relative rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Équipe professionnelle collaborant sur un projet de communication"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400/a4b8c4/FFFFFF?text=Équipe+Parallax'"
+                width="5472"
+                height="3648"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-br from-[#6A7D89]/70 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-6 text-white">
+                <span class="inline-block bg-[#E8D9C5] text-gray-800 px-3 py-1 rounded text-sm font-medium mb-2 font-['DM_Sans']">Métamorphose 90 jours</span>
+                <p class="text-lg font-['Nunito']">Une approche structurée pour des résultats visibles et durables</p>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2 text-right">Photo by OVAN</p>
+            
+            <div class="bg-white shadow-lg rounded-lg p-6 mt-6 border border-gray-100">
+              <div class="flex items-center space-x-4 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <div>
+                  <h5 class="font-medium text-gray-800 font-['DM_Sans']">Notre engagement</h5>
+                  <p class="text-sm text-gray-600 font-['Nunito']">Un accompagnement complet et personnalisé</p>
+                </div>
+              </div>
+              <ul class="space-y-2 ml-12">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-gray-600 font-['Nunito']">2 sessions stratégiques par semaine</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-gray-600 font-['Nunito']">Support réactif sous 24h</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-sm text-gray-600 font-['Nunito']">Boîte à outils complète et personnalisée</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const solutionCtaButton = document.getElementById('solution-cta');
+        
+        // Make sure the modal from hero section is accessible
+        solutionCtaButton.addEventListener('click', function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist yet
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        });
+      });
+    </script>
+  </section>
+</div>
+
+</element><element id="d03d3039-c8a9-47e0-8dbc-c211ea83e5d7" data-section-id="d03d3039-c8a9-47e0-8dbc-c211ea83e5d7">
+
+
+<div id="root">
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Témoignages</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Découvrez les retours d'expérience de nos clients qui ont transformé leur communication.</p>
+      </div>
+      
+      <!-- Statistique mise en avant -->
+      <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm border border-gray-100 p-8 mb-16">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2 font-['DM_Sans']">77%</h3>
+            <p class="text-gray-600 font-['Nunito']">des consommateurs achètent auprès des marques qu'ils suivent sur les réseaux sociaux.</p>
+            <p class="text-sm text-gray-500 mt-2 font-['Nunito']">Source: SproutSocial</p>
+          </div>
+          <div class="md:w-1/2 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8">
+            <p class="text-gray-600 italic font-['Nunito']">"Une communication claire et cohérente est le fondement d'une relation de confiance avec vos clients. C'est ce que nous construisons ensemble."</p>
+            <p class="mt-4 text-[#6A7D89] font-medium font-['DM_Sans']">— Équipe Parallax</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Témoignages en grille -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Témoignage 1 -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 transition-all hover:shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+              <span class="text-[#6A7D89] text-xl font-bold">M</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 font-['DM_Sans']">Marie Dubois</h4>
+              <p class="text-sm text-gray-600 font-['Nunito']">Studio de Design, Paris</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex text-[#E8D9C5]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 font-['Nunito']">"Grâce à Parallax, notre communication visuelle est enfin alignée avec nos valeurs. Notre audience a doublé en 3 mois !"</p>
+          <div class="pt-4 border-t border-gray-100">
+            <span class="text-sm text-[#A4B8C4] font-['Nunito']">Programme Métamorphose terminé en Janvier 2023</span>
+          </div>
+        </div>
+        
+        <!-- Témoignage 2 -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 transition-all hover:shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-[#A4B8C4] flex items-center justify-center mr-4">
+              <span class="text-white text-xl font-bold">T</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 font-['DM_Sans']">Thomas Mercier</h4>
+              <p class="text-sm text-gray-600 font-['Nunito']">Cabinet d'architecture, Lyon</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex text-[#E8D9C5]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 font-['Nunito']">"Notre message est désormais clair et impactant. Les prospects comprennent immédiatement notre offre et ce qui nous différencie."</p>
+          <div class="pt-4 border-t border-gray-100">
+            <span class="text-sm text-[#A4B8C4] font-['Nunito']">Programme Métamorphose terminé en Mars 2023</span>
+          </div>
+        </div>
+        
+        <!-- Témoignage 3 -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6 transition-all hover:shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-[#6A7D89] flex items-center justify-center mr-4">
+              <span class="text-white text-xl font-bold">S</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 font-['DM_Sans']">Sophie Laurent</h4>
+              <p class="text-sm text-gray-600 font-['Nunito']">Atelier de Création, Bordeaux</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex text-[#E8D9C5]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4 font-['Nunito']">"L'approche humaine et structurée de Parallax a complètement transformé notre présence en ligne. Notre CA a augmenté de 30% !"</p>
+          <div class="pt-4 border-t border-gray-100">
+            <span class="text-sm text-[#A4B8C4] font-['Nunito']">Programme Métamorphose terminé en Mai 2023</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Témoignage feature -->
+      <div class="mt-16 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/3 relative h-64 md:h-auto">
+            <img 
+              src="https://images.unsplash.com/photo-1659482634001-7e2571dec3e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8dGVzdGltb25pYWxzJTIwZmVlZGJhY2slMjBhdXRoZW50aWMlMjB0cnVzdHdvcnRoeXxlbnwwfDF8fHwxNzQzMTU5Njc2fDA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+              alt="Témoignage client" 
+              onerror="this.onerror=null; this.src='https://placehold.co/600x800/6A7D89/FFFFFF?text=Client+Testimonial'"
+              class="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            >
+          </div>
+          <div class="md:w-2/3 p-8 md:p-12">
+            <div class="flex mb-6">
+              <svg class="h-8 w-8 text-[#E8D9C5]" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 8v12H0V8h10zm2 0h10v12H12V8z"></path>
+              </svg>
+            </div>
+            <blockquote class="text-xl text-gray-700 mb-6 font-['Nunito']">
+              "Avant de travailler avec Parallax, notre communication était dispersée et sans impact. Aujourd'hui, nous avons une stratégie claire qui reflète parfaitement notre identité. Notre message résonne enfin auprès de notre audience cible."
+            </blockquote>
+            <div class="flex items-center">
+              <div class="mr-4">
+                <div class="w-12 h-12 rounded-full bg-[#A4B8C4]/20 flex items-center justify-center">
+                  <span class="text-[#6A7D89] text-xl font-bold">J</span>
+                </div>
+              </div>
+              <div>
+                <p class="font-medium text-gray-800 font-['DM_Sans']">Julien Moreau</p>
+                <p class="text-gray-600 font-['Nunito']">Fondateur, Studio Naturel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Call to action -->
+      <div class="mt-16 text-center">
+        <p class="text-gray-600 mb-6 font-['Nunito']">Rejoignez nos clients satisfaits et transformez votre communication.</p>
+        <button id="testimonials-cta" class="bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all">
+          Je réserve mon audit gratuit
+        </button>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const testimonialsCtaButton = document.getElementById('testimonials-cta');
+        
+        testimonialsCtaButton.addEventListener('click', function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist yet
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        });
+      });
+    </script>
+  </section>
+</div>
+
+</element><element id="7ec11950-6a94-4860-9dcb-6f778b1d27ac" data-section-id="7ec11950-6a94-4860-9dcb-6f778b1d27ac">
+
+<div id="root">
+  <section id="bonus" class="py-20 bg-[#E8D9C5]/10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Offre</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Une opportunité exceptionnelle et limitée pour transformer votre communication.</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+        <div class="lg:w-1/2 order-2 lg:order-1">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="bg-[#6A7D89] p-6">
+              <h3 class="text-white text-2xl font-bold font-['DM_Sans']">Audit de Communication Gratuit</h3>
+              <p class="text-white/80 mt-2 font-['Nunito']">Valeur réelle : 490€</p>
+            </div>
+            
+            <div class="p-8">
+              <div class="flex items-start mb-6">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-semibold font-['DM_Sans']">Diagnostic personnalisé</h4>
+                  <p class="text-gray-600 text-sm mt-1 font-['Nunito']">Analyse complète de votre communication actuelle et identification des axes d'amélioration.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start mb-6">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-semibold font-['DM_Sans']">Recommandations stratégiques</h4>
+                  <p class="text-gray-600 text-sm mt-1 font-['Nunito']">Conseils personnalisés pour faire ressortir votre singularité et créer un impact immédiat.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start mb-6">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-semibold font-['DM_Sans']">Session de 45 minutes</h4>
+                  <p class="text-gray-600 text-sm mt-1 font-['Nunito']">Échange direct avec nos experts pour établir une feuille de route adaptée à vos objectifs.</p>
+                </div>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p class="text-gray-700 font-medium font-['Nunito']">Seulement 5 audits offerts par mois</p>
+                </div>
+              </div>
+              
+              <div class="flex justify-center">
+                <div class="relative">
+                  <div class="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#E8D9C5] flex items-center justify-center animate-pulse z-10">
+                    <span class="text-[#6A7D89] text-xs font-bold" id="places-counter">5</span>
+                  </div>
+                  <button id="bonus-cta" class="bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all w-full">
+                    Je réserve mon audit gratuit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-4 bg-white/50 rounded-lg border border-gray-200">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p class="text-gray-700 text-sm font-['Nunito']">
+                <span class="font-medium">Aucun engagement nécessaire.</span> Cet audit est une première étape pour explorer comment nous pourrions travailler ensemble, sans aucune obligation de poursuivre.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/2 order-1 lg:order-2 mb-8 lg:mb-0">
+          <div class="relative">
+            <div class="absolute -top-4 -right-4 bg-white py-2 px-4 rounded-full shadow-md z-10">
+              <span class="text-red-500 font-bold font-['DM_Sans'] animate-pulse">OFFERT</span>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Professionnel confiant symbolisant la transformation de votre communication"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400/e8d9c5/6A7D89?text=Audit+Gratuit'"
+                width="5066"
+                height="3377"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+            <p class="text-xs text-gray-500 mt-2 text-right">Photo by fauxels</p>
+
+            <div class="mt-6 bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 class="text-xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Pourquoi cet audit est essentiel</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-700 font-['Nunito']">Identifiez les freins invisibles qui limitent votre impact</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-700 font-['Nunito']">Découvrez les opportunités négligées pour vous démarquer</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A4B8C4] mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-700 font-['Nunito']">Obtenez une feuille de route claire pour les actions prioritaires</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Connect with the audit modal
+        const bonusCta = document.getElementById('bonus-cta');
+        bonusCta.addEventListener('click', function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        });
+
+        // Countdown timer functionality
+        function startCountdown() {
+          // Set the countdown to 3 days from now
+          const countDownDate = new Date();
+          countDownDate.setDate(countDownDate.getDate() + 3);
+          
+          // Update the countdown every second
+          const countdownTimer = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+            
+            // Find the distance between now and the countdown date
+            const distance = countDownDate.getTime() - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+            
+            // If the countdown is finished, write some text
+            if (distance < 0) {
+              clearInterval(countdownTimer);
+              document.getElementById("days").innerHTML = "00";
+              document.getElementById("hours").innerHTML = "00";
+              document.getElementById("minutes").innerHTML = "00";
+              document.getElementById("seconds").innerHTML = "00";
+            }
+          }, 1000);
+        }
+        
+        // Start the countdown
+        startCountdown();
+        
+        // Simulate decreasing places count
+        let placesInterval;
+        
+        function simulateDecreasingPlaces() {
+          const placesCounter = document.getElementById('places-counter');
+          let currentPlaces = parseInt(placesCounter.textContent);
+          
+          placesInterval = setInterval(function() {
+            // Randomly decrease places with a low probability
+            if (Math.random() < 0.01 && currentPlaces > 1) {
+              currentPlaces -= 1;
+              placesCounter.textContent = currentPlaces;
+              
+              // Show notification when places decrease
+              showPlacesNotification(currentPlaces);
+              
+              // If places reach 1, clear the interval
+              if (currentPlaces === 1) {
+                clearInterval(placesInterval);
+              }
+            }
+          }, 5000);
+        }
+        
+        function showPlacesNotification(places) {
+          // Create notification element
+          const notification = document.createElement('div');
+          notification.className = 'fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg z-50 max-w-xs transform translate-y-full opacity-0 transition-all duration-500';
+          notification.innerHTML = `
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-gray-800 font-medium font-['DM_Sans']">Plus que ${places} places disponibles !</p>
+                <p class="text-gray-600 text-sm mt-1 font-['Nunito']">Réservez votre audit gratuit avant qu'il ne soit trop tard.</p>
+              </div>
+            </div>
+            <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-600" aria-label="Fermer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          `;
+          
+          // Add notification to the document
+          document.body.appendChild(notification);
+          
+          // Show notification with animation
+          setTimeout(() => {
+            notification.classList.remove('translate-y-full', 'opacity-0');
+          }, 100);
+          
+          // Set up close button
+          const closeButton = notification.querySelector('button');
+          closeButton.addEventListener('click', () => {
+            notification.classList.add('translate-y-full', 'opacity-0');
+            setTimeout(() => {
+              notification.remove();
+            }, 500);
+          });
+          
+          // Auto-remove after 5 seconds
+          setTimeout(() => {
+            notification.classList.add('translate-y-full', 'opacity-0');
+            setTimeout(() => {
+              notification.remove();
+            }, 500);
+          }, 5000);
+        }
+        
+        // Start simulating decreasing places
+        simulateDecreasingPlaces();
+      });
+    </script>
+  </section>
+</div>
+
+</element><element id="68f57f8c-7488-444e-946c-b05aa6127043" data-section-id="68f57f8c-7488-444e-946c-b05aa6127043">
+
+<div id="root">
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">À propos</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Découvrez l'équipe qui transformera votre communication.</p>
+      </div>
+      
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        <div class="lg:w-1/2">
+          <div class="relative rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://images.pexels.com/photos/8001240/pexels-photo-8001240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Zoé de l'équipe Parallax, spécialiste en stratégie de communication"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400/e8d9c5/6A7D89?text=Équipe+Parallax'"
+              width="5760"
+              height="3840"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6 text-white">
+              <h3 class="text-2xl font-bold font-['DM_Sans']">Zoé & Thibaud</h3>
+              <p class="font-['Nunito']">Duo créatif, complice dans la vie comme au travail</p>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Photo by Pavel Danilyuk</p>
+        </div>
+        
+        <div class="lg:w-1/2">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 font-['DM_Sans']">Une approche humaine et stratégique</h3>
+          
+          <div class="space-y-6">
+            <div>
+              <p class="text-gray-700 leading-relaxed font-['Nunito']">
+                Nous sommes Zoé et Thibaud, un duo frère-sœur uni par la même passion : révéler l'authenticité des entreprises à travers une communication structurée et impactante.
+              </p>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                <span class="text-[#6A7D89] text-xl font-bold">Z</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Zoé, la stratège</h4>
+                <p class="text-gray-600 font-['Nunito']">Avec 7 ans d'expérience en stratégie de communication, Zoé analyse vos besoins et élabore des plans d'action personnalisés qui reflètent votre singularité.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#A4B8C4] flex items-center justify-center mr-4">
+                <span class="text-white text-xl font-bold">T</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Thibaud, le créatif</h4>
+                <p class="text-gray-600 font-['Nunito']">Designer et expert en production de contenu, Thibaud donne vie à votre message avec une esthétique minimaliste et premium qui vous démarque naturellement.</p>
+              </div>
+            </div>
+            
+            <div class="bg-[#E8D9C5]/10 p-6 rounded-lg border border-[#E8D9C5]/30 mt-8">
+              <h4 class="text-lg font-semibold text-gray-800 mb-2 font-['DM_Sans']">Notre philosophie</h4>
+              <p class="text-gray-700 font-['Nunito']">
+                Nous croyons que votre authenticité est votre plus grand atout. Notre approche allie stratégie rigoureuse et créativité intuitive pour construire une présence durable et alignée avec vos valeurs.
+              </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+              <div>
+                <div class="text-3xl font-bold text-[#6A7D89] font-['DM_Sans']">50+</div>
+                <p class="text-gray-600 text-sm font-['Nunito']">TPE/PME accompagnées</p>
+              </div>
+              
+              <div>
+                <div class="text-3xl font-bold text-[#6A7D89] font-['DM_Sans']">7</div>
+                <p class="text-gray-600 text-sm font-['Nunito']">Années d'expérience</p>
+              </div>
+              
+              <div>
+                <div class="text-3xl font-bold text-[#6A7D89] font-['DM_Sans']">90%</div>
+                <p class="text-gray-600 text-sm font-['Nunito']">Taux de satisfaction</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <button id="about-cta" class="bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all">
+              Rencontrons-nous pour un audit gratuit
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Valeurs et approche -->
+      <div class="mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
+            <div class="w-12 h-12 rounded-full bg-[#E8D9C5] flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 font-['DM_Sans']">Authenticité</h3>
+            <p class="text-gray-600 font-['Nunito']">Nous valorisons ce qui vous rend unique et bâtissons une communication qui reflète fidèlement votre identité.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
+            <div class="w-12 h-12 rounded-full bg-[#A4B8C4] flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 font-['DM_Sans']">Structure</h3>
+            <p class="text-gray-600 font-['Nunito']">Nous créons des systèmes de communication organisés et cohérents qui fonctionnent sur le long terme.</p>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 transition-all hover:shadow-md">
+            <div class="w-12 h-12 rounded-full bg-[#6A7D89] flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2 font-['DM_Sans']">Proximité</h3>
+            <p class="text-gray-600 font-['Nunito']">Nous cultivons une relation de confiance et de transparence avec chacun de nos clients.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Citation -->
+      <div class="mt-16 max-w-4xl mx-auto text-center">
+        <svg class="h-8 w-8 text-[#E8D9C5] mx-auto mb-4" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 8v12H0V8h10zm2 0h10v12H12V8z"></path>
+        </svg>
+        <blockquote class="text-xl text-gray-700 mb-6 font-['Nunito']">
+          "Notre mission est de révéler l'authenticité de votre entreprise pour créer une connexion durable avec votre audience. Nous ne faisons pas que communiquer, nous créons des relations."
+        </blockquote>
+        <p class="text-[#6A7D89] font-medium font-['DM_Sans']">— Zoé & Thibaud, Fondateurs de Parallax</p>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const aboutCtaButton = document.getElementById('about-cta');
+        
+        aboutCtaButton.addEventListener('click', function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist yet
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        });
+      });
+    </script>
+  </section>
+</div>
+
+</element><element id="70530183-e3aa-4dd1-af2e-08583b78fff2" data-section-id="70530183-e3aa-4dd1-af2e-08583b78fff2">
+
+<div id="root">
+  <section id="faq" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 font-['DM_Sans']">FAQ</h2>
+        <p class="text-xl text-gray-600 font-['Nunito']">Réponses à vos questions sur notre programme Métamorphose 90 jours.</p>
+      </div>
+      
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+        <div class="lg:w-1/3 order-2 lg:order-1">
+          <div class="sticky top-32">
+            <div class="relative rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Professionnel préparé à répondre à vos questions"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400/a4b8c4/FFFFFF?text=Des+questions?'"
+                width="5048"
+                height="3370"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-[#6A7D89]/70 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 p-6 text-white">
+                <h3 class="text-2xl font-bold font-['DM_Sans']">Vous avez d'autres questions ?</h3>
+                <p class="text-white/90 mt-2 font-['Nunito']">Contactez-nous pour un échange personnalisé.</p>
+                <button id="faq-cta" class="mt-4 bg-white text-[#6A7D89] hover:bg-[#E8D9C5] transition-colors duration-300 font-medium py-2 px-4 rounded-md shadow-sm font-['DM_Sans']">
+                  Réserver un appel
+                </button>
+              </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">Photo by Leeloo The First</p>
+            
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4 font-['DM_Sans']">Contactez-nous</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#6A7D89] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <a href="mailto:hello@chezparallax.fr" class="text-[#6A7D89] hover:text-gray-800 transition-colors font-['Nunito']">hello@chezparallax.fr</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-2/3 order-1 lg:order-2">
+          <div class="space-y-6">
+            <!-- Question 1 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Quel est le prix du programme Métamorphose 90 jours ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">Le programme Métamorphose 90 jours est proposé à partir de 3 900€ HT. Nous proposons également des facilités de paiement en 3 mensualités. Le prix précis est défini suite à l'audit gratuit, en fonction de vos besoins spécifiques et de l'ampleur du projet.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Combien de temps dois-je consacrer au programme chaque semaine ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">Nous recommandons de prévoir environ 3 à 5 heures par semaine pour un résultat optimal. Cela inclut nos sessions de travail ensemble (2 sessions de 1h par semaine) et le temps nécessaire pour mettre en œuvre les recommandations. Nous adaptons cependant notre programme à vos contraintes professionnelles.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Est-ce que ce programme convient à mon secteur d'activité ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">Le programme Métamorphose 90 jours est conçu pour s'adapter à tous les secteurs d'activité. Nous avons accompagné des TPE/PME dans des domaines variés : services, artisanat, conseil, commerce, technologies, santé, etc. Notre approche est personnalisée pour répondre aux spécificités de votre marché.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Quels résultats puis-je attendre après 90 jours ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">À l'issue des 90 jours, vous disposerez d'une stratégie de communication claire, d'outils personnalisés et d'une visibilité renforcée. Nos clients constatent en moyenne une augmentation de 30% de leur engagement sur les réseaux sociaux et une amélioration significative de leur taux de conversion. Les résultats précis dépendent de votre secteur et de votre point de départ.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 5 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Comment se déroule concrètement l'accompagnement ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">L'accompagnement se fait à distance via des visioconférences bi-hebdomadaires. Vous avez également accès à un espace client personnalisé où vous retrouvez tous les documents, outils et ressources. Entre les sessions, nous restons disponibles par email avec un temps de réponse garanti sous 24h. Pour certains clients locaux, nous proposons également des sessions en présentiel.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 6 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">Que se passe-t-il après les 90 jours ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">À la fin du programme, vous êtes autonome pour maintenir et développer votre communication grâce aux outils et à la formation reçue. Nous proposons toutefois un accompagnement continu optionnel pour ceux qui souhaitent un suivi régulier. Une session de bilan est prévue 30 jours après la fin du programme pour mesurer les résultats et ajuster la stratégie si nécessaire.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Question 7 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none" aria-expanded="false">
+                <h3 class="text-lg font-semibold text-gray-800 font-['DM_Sans']">L'audit gratuit m'engage-t-il à suivre le programme ?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-6 w-6 text-[#6A7D89] transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="faq-answer hidden px-6 pb-6 pt-0">
+                <div class="border-t border-gray-200 pt-4">
+                  <p class="text-gray-600 font-['Nunito']">Absolument pas. L'audit gratuit est sans aucun engagement. Il vous permet de découvrir notre approche et d'obtenir déjà des conseils précieux pour votre communication. À l'issue de cet audit, vous êtes libre de décider si vous souhaitez poursuivre avec le programme complet ou non, sans aucune pression commerciale.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-10 text-center">
+            <p class="text-gray-600 mb-4 font-['Nunito']">Vous ne trouvez pas la réponse à votre question ?</p>
+            <button id="faq-contact-cta" class="inline-flex items-center justify-center bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-md shadow-sm font-['DM_Sans']">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              Contactez-nous
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // FAQ accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+          question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('.faq-icon');
+            
+            // Check if this FAQ is currently open
+            const isOpen = answer.classList.contains('hidden') === false;
+            
+            // Close all FAQs first
+            document.querySelectorAll('.faq-answer').forEach(item => {
+              item.classList.add('hidden');
+            });
+            document.querySelectorAll('.faq-icon').forEach(icon => {
+              icon.classList.remove('rotate-180');
+            });
+            document.querySelectorAll('.faq-question').forEach(q => {
+              q.setAttribute('aria-expanded', 'false');
+            });
+            
+            // Toggle the clicked FAQ
+            if (!isOpen) {
+              answer.classList.remove('hidden');
+              icon.classList.add('rotate-180');
+              this.setAttribute('aria-expanded', 'true');
+            }
+          });
+        });
+        
+        // Connect with the audit modal for CTA buttons
+        const faqCta = document.getElementById('faq-cta');
+        const faqContactCta = document.getElementById('faq-contact-cta');
+        
+        const openAuditModal = function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        };
+        
+        if (faqCta) {
+          faqCta.addEventListener('click', openAuditModal);
+        }
+        
+        if (faqContactCta) {
+          faqContactCta.addEventListener('click', openAuditModal);
+        }
+      });
+    </script>
+  </section>
+</div>
+
+</element><element id="ac8d9a6b-4923-4bd5-895c-cb3436de6b71" data-section-id="ac8d9a6b-4923-4bd5-895c-cb3436de6b71">
+
+<div id="root">
+  <section id="cta" class="py-20 bg-[#E8D9C5]/10 relative overflow-hidden">
+    <!-- Subtle decorative elements -->
+    <div class="absolute -top-24 -right-24 w-64 h-64 bg-[#E8D9C5]/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-[#A4B8C4]/10 rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 relative">
+              <img 
+                src="https://images.pexels.com/photos/4045551/pexels-photo-4045551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Professionnel confiant prêt à transformer votre communication"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400/e8d9c5/6A7D89?text=Transformation+90+jours'"
+                width="5066"
+                height="3377"
+                class="w-full h-full object-cover absolute inset-0"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-r from-[#6A7D89]/60 to-transparent"></div>
+              <div class="relative p-8 md:p-10 text-white h-full flex flex-col justify-end min-h-[300px]">
+                <h3 class="text-2xl md:text-3xl font-bold mb-2 font-['DM_Sans']">Prêt à rayonner ?</h3>
+                <p class="text-white/90 font-['Nunito']">Transformez votre communication et connectez-vous avec vos clients idéaux.</p>
+              </div>
+            </div>
+            
+            <div class="md:w-1/2 p-8 md:p-10 bg-white">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-['DM_Sans']">Faites rayonner ce qui vous rend unique</h2>
+              <p class="text-gray-600 mb-6 font-['Nunito']">En 90 jours, nous structurons votre communication pour qu'elle reflète votre authenticité et captive votre audience.</p>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center">
+                  <div class="w-8 h-8 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-['Nunito']">Stratégie personnalisée à votre ADN</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <div class="w-8 h-8 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-['Nunito']">Accompagnement humain sur 90 jours</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <div class="w-8 h-8 rounded-full bg-[#E8D9C5] flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#6A7D89]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-['Nunito']">Résultats visibles et durables</span>
+                </div>
+              </div>
+              
+              <div class="bg-gray-50 p-4 mb-6 rounded-md border border-gray-100">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 rounded-full bg-[#A4B8C4] flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 text-sm font-['Nunito']">
+                    <span class="font-medium">Offre limitée :</span> Les 5 prochains clients bénéficient d'un audit de communication gratuit d'une valeur de 490€.
+                  </p>
+                </div>
+              </div>
+              
+              <button id="final-cta" class="w-full bg-[#C78A5C] hover:bg-[#A4B8C4] text-white hover:text-white transition-colors duration-300 font-medium py-4 px-6 rounded-md shadow-sm font-['DM_Sans'] transform hover:-translate-y-1 hover:shadow-md transition-all text-lg">
+                Je réserve mon audit gratuit
+              </button>
+              
+              <p class="text-xs text-gray-500 text-center mt-4 font-['Nunito']">Aucun engagement. Places limitées à 5 entreprises par mois.</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-gray-500 mt-2 text-right">Photo by Anna Shvets</p>
+      </div>
+      
+      <!-- Client logos -->
+      <div class="mt-16 text-center">
+        <p class="text-gray-600 mb-8 font-['Nunito']">Ils ont fait confiance à Parallax pour leur transformation</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+          <div class="h-12">
+            <div class="h-full w-32 bg-[#6A7D89] rounded flex items-center justify-center text-white font-semibold">Logo Client 1</div>
+          </div>
+          <div class="h-12">
+            <div class="h-full w-32 bg-[#A4B8C4] rounded flex items-center justify-center text-white font-semibold">Logo Client 2</div>
+          </div>
+          <div class="h-12">
+            <div class="h-full w-32 bg-[#E8D9C5] rounded flex items-center justify-center text-[#6A7D89] font-semibold">Logo Client 3</div>
+          </div>
+          <div class="h-12">
+            <div class="h-full w-32 bg-[#6A7D89] rounded flex items-center justify-center text-white font-semibold">Logo Client 4</div>
+          </div>
+          <div class="h-12">
+            <div class="h-full w-32 bg-[#A4B8C4] rounded flex items-center justify-center text-white font-semibold">Logo Client 5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="mt-20 border-t border-gray-200">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <div class="text-xl font-bold text-gray-800 font-['DM_Sans']">Parallax</div>
+            <p class="text-sm text-gray-600 font-['Nunito']">Communication authentique pour TPE/PME humaines</p>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
+            <a href="#" class="text-sm text-gray-600 hover:text-[#6A7D89] transition-colors font-['Nunito']">Mentions légales</a>
+            <a href="#" class="text-sm text-gray-600 hover:text-[#6A7D89] transition-colors font-['Nunito']">Politique de confidentialité</a>
+            <a href="#" class="text-sm text-gray-600 hover:text-[#6A7D89] transition-colors font-['Nunito']">CGV</a>
+          </div>
+        </div>
+        
+        <div class="mt-8 text-center text-sm text-gray-500 font-['Nunito']">
+          &copy; 2025 Parallax. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const finalCta = document.getElementById('final-cta');
+        
+        finalCta.addEventListener('click', function() {
+          const auditModal = document.getElementById('audit-modal');
+          if (auditModal) {
+            // Open the modal if it exists
+            auditModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            auditModal.setAttribute('aria-hidden', 'false');
+            
+            // Set focus to first form element
+            setTimeout(() => {
+              const firstInput = document.getElementById('name');
+              if (firstInput) {
+                firstInput.focus();
+              }
+            }, 100);
+          } else {
+            // Fallback if modal doesn't exist yet
+            alert("Réservez votre audit gratuit en nous contactant directement !");
+          }
+        });
+        
+        // Button hover animation
+        finalCta.addEventListener('mouseenter', function() {
+          this.classList.add('animate-pulse');
+        });
+        
+        finalCta.addEventListener('mouseleave', function() {
+          this.classList.remove('animate-pulse');
+        });
+        
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+</div>
+
+</element></div>
+      </main>
+
+      <!-- {bodyScripts} -->
+   </body>
 </html>
